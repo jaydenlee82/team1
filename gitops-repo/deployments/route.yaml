@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: nginx-route
+  namespace: team1-app
+spec:
+  to:
+    kind: Service
+    name: nginx-service  # 서비스 이름과 연결
+  port:
+    targetPort: 80
+  tls:
+    termination: edge  # HTTPS를 위한 TLS 종료 설정
