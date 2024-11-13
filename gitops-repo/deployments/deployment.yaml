@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: 'image-registry.openshift-image-registry.svc:5000/team1-app/my-nginx-image:latest'
+          image: 'image-registry.openshift-image-registry.svc:5000/team1-app/my-nginx-image:2024-11-13-11-18-59'
           ports:
             - containerPort: 80
