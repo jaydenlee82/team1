@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: 'image-registry.openshift-image-registry.svc:5000/team1-app/$(params.IMAGE_NAME):$(tasks.generate-tag.results.image-tag)'
+          image: 'image-registry.openshift-image-registry.svc:5000/team1-app/my-nginx-image:latest'
           ports:
             - containerPort: 80
